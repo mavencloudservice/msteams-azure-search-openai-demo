@@ -1,7 +1,7 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
     "manifestVersion": "1.16",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.microsoft.teams.demo.openai.search.azure",
     "developer": {
@@ -15,7 +15,7 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "Chat with your data",
+        "short": "Chat with your data (${{TEAMSFX_ENV}})",
         "full": "Chat with your data using Azure OpenAI + Cognitive Search"
     },
     "description": {
