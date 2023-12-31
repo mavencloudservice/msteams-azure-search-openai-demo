@@ -70,7 +70,7 @@ const setup = (app: Application) => {
       const citationFileReferences = getCitations(reply.content);
       const answer = replaceCitations(citationFileReferences, reply.content);
       const citations = convertCitations(citationFileReferences);
-      const supportingContent = getSupportingContent(data_points);
+      const supportingContent = getSupportingContent(data_points.text);
 
       const data: ResponseCard = {
         answer,
