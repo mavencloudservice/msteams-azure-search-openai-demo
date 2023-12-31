@@ -1,6 +1,11 @@
 import * as restify from 'restify';
 import app from './app';
 import adapter from './app/shared/adapter';
+// Import the `useAzureMonitor()` function from the `@azure/monitor-opentelemetry` package.
+const {useAzureMonitor} = require('@azure/monitor-opentelemetry');
+
+// Call the `useAzureMonitor()` function to configure OpenTelemetry to use Azure Monitor.
+useAzureMonitor();
 
 // create server
 const server = restify.createServer();
