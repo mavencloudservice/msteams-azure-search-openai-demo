@@ -24,7 +24,7 @@ To run this project locally you will need to:
 1. Clone/fork this repo to your local machine.
 1. Open the repo folder in VSCode.
 1. Create `env` folder in root of the project.
-1. Create [env.local](#envlocal) and [env.local.user](#envlocaluser) files in `env` folder.
+1. Create [.env.local](#envlocal) and [.env.local.user](#envlocaluser) files in `env` folder.
 1. Update `APP_BACKEND_ENDPOINT` variable with the URL to your provisioned backend.
 1. Run Debug session (F5).
 
@@ -36,7 +36,7 @@ To deploy your local project you will need to:
 
 > **NOTE**: An Azure subscription is required to deploy this project to Azure.
 
-1. Create [env.dev](#envdev) and [env.dev.user](#envdevuser) files in `env` folder.
+1. Create [.env.dev](#envdev) and [.env.dev.user](#envdevuser) files in `env` folder.
 1. Update `APP_BACKEND_ENDPOINT` variable in `env.dev` with the URL of your provisioned backend.
 1. Open Teams Toolkit from the sidebar in VSCode.
 1. Select `Provision` and follow steps to provision resources in Azure.
@@ -54,7 +54,7 @@ The following resources will be deployed to Azure:
 
 ## Reference files
 
-### env.local
+### .env.local
 
 ```
 TEAMSFX_ENV=local
@@ -73,13 +73,13 @@ APP_BACKEND_ENDPOINT=https://app-backend-{randomid}.azurewebsites.net
 
 > NOTE: You need to replace the `APP_BACKEND_ENDPOINT` value with the URL of your provisioned backend.
 
-### env.local.user
+### .env.local.user
 
 ```
 SECRET_BOT_PASSWORD=
 ```
 
-### env.dev
+### .env.dev
 
 ```
 TEAMSFX_ENV=dev
@@ -98,7 +98,7 @@ APP_BACKEND_ENDPOINT=https://app-backend-{randomid}.azurewebsites.net
 
 > NOTE: You need to replace the `APP_BACKEND_ENDPOINT` value with the URL of your provisioned backend.
 
-### env.dev.user
+### .env.dev.user
 
 ```
 SECRET_BOT_PASSWORD=
