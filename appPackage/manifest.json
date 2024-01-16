@@ -1,26 +1,26 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
     "manifestVersion": "1.16",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.microsoft.teams.demo.openai.search.azure",
     "developer": {
-        "name": "Microsoft",
-        "websiteUrl": "https://github.com/Azure-Samples/azure-search-openai-demo",
-        "privacyUrl": "https://github.com/Azure-Samples/azure-search-openai-demo",
-        "termsOfUseUrl": "https://github.com/Azure-Samples/azure-search-openai-demo"
+        "name": "MavenCloudService",
+        "websiteUrl": "https://mavencloudservice.com",
+        "privacyUrl": "https://mavencloudservice.com",
+        "termsOfUseUrl": "https://mavencloudservice.com"
     },
     "icons": {
         "color": "color.png",
         "outline": "outline.png"
     },
     "name": {
-        "short": "Chat with your data",
-        "full": "Chat with your data using Azure OpenAI + Cognitive Search"
+        "short": "AIM 메이븐 챗봇",
+        "full": "AIM 메이븐 챗봇"
     },
     "description": {
-        "short": "ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search",
-        "full": "ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search"
+        "short": "회사 데이터를 기반으로 Azure OpenAI를 사용하는 채팅",
+        "full": "회사 데이터를 기반으로 Azure OpenAI를 사용하는 채팅"
     },
     "accentColor": "#FFFFFF",
     "bots": [
@@ -39,7 +39,7 @@
                     "commands": [
                         {
                             "title": "New chat",
-                            "description": "Start a new chat with your data"
+                            "description": "사내 데이터를 기반으로 새 채팅을 시작"
                         }
                     ]
                 }
