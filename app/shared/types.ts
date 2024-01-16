@@ -34,10 +34,10 @@ export type ChatMessage = {
 };
 
 export type ChatRequest = {
-  context: ChatRequestContext;
+  context?: ChatRequestContext;
   messages: ChatMessage[];
-  session_state: string | null;
-  stream: boolean;
+  session_state: any;
+  stream?: boolean;
 };
 
 export type ChatResponse = {
@@ -71,14 +71,20 @@ export type ContentFilterResult = {
   severity: string;
 };
 
+export type Thoughts = {
+  title: string;
+  description: any; // It can be any output from the api
+  props?: { [key: string]: string };
+};
+
 export type ChatResponseContext = {
   data_points: string[];
-  followup_questions: string[];
-  thoughts: string;
+  followup_questions: string[] | null;
+  thoughts: Thoughts;
 };
 
 export type ChatRequestContext = {
-  overrides: ChatOverrides;
+  overrides?: ChatOverrides;
 };
 
 export type ChatPromptFilterResult = {

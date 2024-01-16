@@ -63,12 +63,13 @@ const setup = (app: Application) => {
       const {data_points, followup_questions} = chatResponse.choices[0].context;
       const {message: reply} = chatResponse.choices[0];
 
-      addMessageToConversationHistory(state, reply);
+      const reply_message = {content: reply.content, role: reply.role};
+      addMessageToConversationHistory(state, reply_message);
 
       const citationFileReferences = getCitations(reply.content);
       const answer = replaceCitations(citationFileReferences, reply.content);
       const citations = convertCitations(citationFileReferences);
-      const supportingContent = getSupportingContent(data_points);
+      const supportingContent = getSupportingContent(data_points['text']);
 
       const data: ResponseCard = {
         answer,
