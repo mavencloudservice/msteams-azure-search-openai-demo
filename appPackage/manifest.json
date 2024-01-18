@@ -1,7 +1,7 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
     "manifestVersion": "1.16",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.microsoft.teams.demo.openai.search.azure",
     "developer": {
@@ -15,12 +15,12 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "AIM GPT",
-        "full": "AIM 기업용 GPT"
+        "short": "AiM GPT",
+        "full": "AiM 기업용 GPT"
     },
     "description": {
         "short": "회사 데이터를 기반으로 Azure OpenAI를 사용하는 채팅",
-        "full": "회사 데이터를 기반으로 Azure OpenAI를 사용하는 채팅"
+        "full": "Microsoft의 검색 서비스(Azure Search)와 OpenAI의 언어 모델을 결합하여 사용자의 내부 정보를 바탕으로 간편하게 정보를 찾을 수 있고, 자연어 처리 기술로 질문에 효과적으로 응답하는 혁신적인 솔루션입니다."
     },
     "accentColor": "#FFFFFF",
     "bots": [
