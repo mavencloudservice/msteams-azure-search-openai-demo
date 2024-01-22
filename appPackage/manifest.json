@@ -1,7 +1,7 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
     "manifestVersion": "1.16",
-    "version": "1.0.8",
+    "version": "1.0.10",
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.microsoft.teams.demo.openai.search.azure",
     "developer": {
@@ -16,7 +16,7 @@
     },
     "name": {
         "short": "AiM GPT",
-        "full": "AiM 기업용 GPT"
+        "full": "AiM GPT - Enterprise"
     },
     "description": {
         "short": "회사 데이터를 기반으로 Azure OpenAI를 사용하는 채팅",

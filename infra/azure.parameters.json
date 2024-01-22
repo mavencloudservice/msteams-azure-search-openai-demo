@@ -15,7 +15,7 @@
       "value": "B1"
     },
     "botDisplayName": {
-      "value": "aim-maven-chat"
+      "value": "aim-enterprise"
     },
     "appBackendEndpoint":{
       "value": "${{APP_BACKEND_ENDPOINT}}"

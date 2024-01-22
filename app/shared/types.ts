@@ -56,7 +56,7 @@ export type ChatResponse = {
 export type ChatChoice = {
   content_filter_results: ContentFilterResults;
   context: ChatResponseContext;
-  finish_reason: string;
+  finish_reason: st=ring;
   index: number;
   message: ChatMessage;
   session_state: string | null;
@@ -81,9 +81,13 @@ export type Thoughts = {
 };
 
 export type ChatResponseContext = {
-  data_points: string[];
-  followup_questions: string[] | null;
-  thoughts: Thoughts;
+  data_points: DataPoints;
+  followup_questions: string[];
+  thoughts: string;
+};
+
+export type DataPoints = {
+  text: string[];
 };
 
 export type ChatRequestContext = {

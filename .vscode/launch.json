@@ -10,6 +10,10 @@
                 "group": "remote",
                 "order": 1
             },
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+                ],
             "internalConsoleOptions": "neverOpen"
         },
         {
@@ -21,6 +25,10 @@
                 "group": "remote",
                 "order": 2
             },
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+                ],            
             "internalConsoleOptions": "neverOpen"
         },
         {
