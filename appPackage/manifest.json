@@ -1,9 +1,9 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
     "manifestVersion": "1.16",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "id": "${{TEAMS_APP_ID}}",
-    "packageName": "com.microsoft.teams.demo.openai.search.azure",
+    "packageName": "com.mavencloudservice.teams.enterprise.gpt.aim",
     "developer": {
         "name": "MavenCloudService",
         "websiteUrl": "https://mavencloudservice.com",
