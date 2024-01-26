@@ -56,7 +56,7 @@ export type ChatResponse = {
 export type ChatChoice = {
   content_filter_results: ContentFilterResults;
   context: ChatResponseContext;
-  finish_reason: st=ring;
+  finish_reason: string;
   index: number;
   message: ChatMessage;
   session_state: string | null;
