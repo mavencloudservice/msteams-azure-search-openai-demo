@@ -24,6 +24,12 @@ param storageAccountName string = resourceBaseName
 param blobContainerName string = 'state'
 param location string = resourceGroup().location
 
+param aadAppClientId string
+param aadAppTenantId string
+param aadAppOauthAuthorityHost string
+@secure()
+param aadAppClientSecret string
+
 // create azure storage account
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   name: resourceBaseName
@@ -83,6 +89,22 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
         {
           name: 'BOT_PASSWORD'
           value: botAadAppClientSecret
+        }
+        {
+          name: 'AAD_APP_CLIENT_ID'
+          value: aadAppClientId
+        }
+        { 
+          name: 'AAD_APP_CLIENT_SECRET'
+          value: aadAppClientSecret
+        }
+        {
+          name: 'AAD_APP_TENANT_ID'
+          value: aadAppTenantId
+        }
+        {
+          name: 'AAD_APP_OAUTH_AUTHORITY_HOST'
+          value: aadAppOauthAuthorityHost
         }
         {
           name: 'APP_BACKEND_ENDPOINT'
