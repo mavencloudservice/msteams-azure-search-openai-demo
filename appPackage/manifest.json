@@ -3,7 +3,7 @@
     "manifestVersion": "1.16",
     "version": "1.0.11",
     "id": "${{TEAMS_APP_ID}}",
-    "packageName": "com.mavencloudservice.teams.enterprise.gpt.aim",
+    "packageName": "com.mavencloudservice.teams.gpt.aim.enterprise",
     "developer": {
         "name": "MavenCloudService",
         "websiteUrl": "https://mavencloudservice.com",
