@@ -29,7 +29,7 @@ provision:
   - uses: botFramework/create
     with:
       botId: ${{BOT_ID}}
-      name: aim-enterprise
+      name: aim-enterprise-${{TEAMSFX_ENV}}
       messagingEndpoint: ${{BOT_ENDPOINT}}/api/messages
       description: ""
       channels:
@@ -76,3 +76,4 @@ deploy:
         BLOB_STORAGE_CONTAINER_NAME: ${{BLOB_STORAGE_CONTAINER_NAME}}
         TEAMS_APP_ID: ${{TEAMS_APP_ID}}
         APP_BACKEND_ENDPOINT: ${{APP_BACKEND_ENDPOINT}}
+        APPINSIGHTS_INSTRUMENTATIONKEY: ${{APPINSIGHTS_INSTRUMENTATIONKEY}}
