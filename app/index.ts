@@ -5,6 +5,19 @@ import * as bot from './bot';
 import config from './shared/config';
 import {ChatMessage} from './shared/types';
 
+import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+import { ReactPlugin } from '@microsoft/applicationinsights-react-js';
+
+var reactPlugin = new ReactPlugin();
+const appInsights = new ApplicationInsights({ config: {
+  instrumentationKey: process.env.APPINSIGHTS_INSTRUMENTATIONKEY,
+  /* ...Other Configuration Options... */
+  enableAutoRouteTracking: true,
+  extensions: [reactPlugin],
+} });
+appInsights.loadAppInsights();
+appInsights.trackPageView();
+
 type ConversationState = {
   messages: ChatMessage[];
 };
