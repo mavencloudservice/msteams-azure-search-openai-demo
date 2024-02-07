@@ -75,6 +75,7 @@ TEAMS_APP_TENANT_ID=
 BLOB_STORAGE_CONNECTION_STRING=UseDevelopmentStorage=true
 BLOB_STORAGE_CONTAINER_NAME=state
 
+APPINSIGHTS_INSTRUMENTATIONKEY={AppInsights Key here}
 APP_BACKEND_ENDPOINT=https://app-backend-{randomid}.azurewebsites.net
 ```
 
@@ -101,6 +102,7 @@ TEAMS_APP_ID=
 BOT_AZURE_APP_SERVICE_RESOURCE_ID=
 BOT_DOMAIN=
 
+APPINSIGHTS_INSTRUMENTATIONKEY={AppInsights Key here}
 APP_BACKEND_ENDPOINT=https://app-backend-{randomid}.azurewebsites.net
 ```
 
